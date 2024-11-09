@@ -6,6 +6,8 @@ const contadorOrdenador = document.getElementById('contador-ordenador');
 let puntosUsuario = 0;
 let puntosOrdenador = 0;
 
+resultados.style.display = "none";
+
 botones.forEach(boton => {
   boton.addEventListener('click', () => {
     const jugadaUsuario = boton.dataset.jugada;
@@ -38,6 +40,7 @@ function obtenerResultado(jugadaUsuario, jugadaOrdenador) {
 
 function mostrarResultado(jugadaUsuario, jugadaOrdenador, resultado) {
   resultados.innerHTML = `Tu jugada: <strong>${jugadaUsuario}</strong> | Jugada de la máquina: <strong>${jugadaOrdenador}</strong> | Resultado: <strong>${resultado}</strong>`;
+  resultados.style.display = "flex";
 }
 
 function actualizarPuntuacion(resultado) {

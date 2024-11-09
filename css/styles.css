@@ -13,7 +13,7 @@ body {
 .botones {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   margin-bottom: 20px;
 }
 
@@ -21,7 +21,7 @@ body {
   background-color: #3498db;
   color: #fff;
   padding: 18px 24px;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
   width: 150px;
   text-align: center;
@@ -37,11 +37,11 @@ body {
 #resultados {
   font-size: 20px;
   margin: 20px 0;
-  display: flex;
+  display: none;
   flex-direction: row; 
   justify-content: center;
   gap: 30px;
-  background-color: rgb(202, 202, 225);
+  border: 2px solid #2980b9;
   border-radius: 5px;
   padding: 20px;
 }
@@ -50,9 +50,21 @@ body {
   font-weight: bold;
 }
 
-#contador-usuario, #contador-ordenador {
-  font-size: 24px;
+#contenedor-puntuacion {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border:2px solid orange;
+  border-radius: 5px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#contador-usuario, #contador-ordenador {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  margin: 10px;
   font-weight: bold;
 }
