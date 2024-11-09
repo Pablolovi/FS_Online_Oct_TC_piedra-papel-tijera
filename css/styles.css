@@ -1,16 +1,58 @@
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #f1f1f1;
 }
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
 .boton-jugada {
   background-color: #3498db;
   color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 18px 24px;
+  font-size: 18px;
   cursor: pointer;
+  width: 150px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
+
+.boton-jugada:hover {
+  background-color: #2980b9;
+}
+
 #resultados {
   font-size: 20px;
   margin: 20px 0;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 30px;
+  background-color: rgb(202, 202, 225);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#resultados * {
+  font-weight: bold;
+}
+
+#contador-usuario, #contador-ordenador {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
