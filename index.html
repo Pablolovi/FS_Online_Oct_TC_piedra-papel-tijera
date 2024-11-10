@@ -8,16 +8,22 @@
 </head>
 <body>
   <div class="botones">
-    <button class="boton-jugada" data-jugada="piedra">Piedra</button>
-    <button class="boton-jugada" data-jugada="papel">Papel</button>
-    <button class="boton-jugada" data-jugada="tijera">Tijera</button>
+    <button class="boton-jugada">
+      <span class="button_top" data-jugada="piedra">Piedra</span>
+    </button>
+    <button class="boton-jugada">
+      <span class="button_top" data-jugada="papel">Papel</span>
+    </button>
+    <button class="boton-jugada">
+      <span class="button_top" data-jugada="tijera">Tijera</span>
+    </button>
   </div>
 
   <div id="resultados"></div>
   
   <div id="contenedor-puntuacion">
-  <p id="contador-usuario">Tus puntos: 0</p>
-  <p id="contador-ordenador">Puntos de la máquina: 0</p>
+    <p id="contador-usuario">Tus puntos: 0</p>
+    <p id="contador-ordenador">Puntos de la máquina: 0</p>
   </div>
 
   <script src="./js/script.js"></script>
